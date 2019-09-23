@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "pralish.github.io/recipeapp/static/css/main.f05016c4.chunk.css",
-    "main.js": "pralish.github.io/recipeapp/static/js/main.4676d723.chunk.js",
-    "main.js.map": "pralish.github.io/recipeapp/static/js/main.4676d723.chunk.js.map",
-    "runtime-main.js": "pralish.github.io/recipeapp/static/js/runtime-main.b8f40a69.js",
-    "runtime-main.js.map": "pralish.github.io/recipeapp/static/js/runtime-main.b8f40a69.js.map",
-    "static/js/2.3612b986.chunk.js": "pralish.github.io/recipeapp/static/js/2.3612b986.chunk.js",
-    "static/js/2.3612b986.chunk.js.map": "pralish.github.io/recipeapp/static/js/2.3612b986.chunk.js.map",
-    "index.html": "pralish.github.io/recipeapp/index.html",
-    "precache-manifest.de7ef2c945ab33cc2180dc9dbce9eda5.js": "pralish.github.io/recipeapp/precache-manifest.de7ef2c945ab33cc2180dc9dbce9eda5.js",
-    "service-worker.js": "pralish.github.io/recipeapp/service-worker.js",
-    "static/css/main.f05016c4.chunk.css.map": "pralish.github.io/recipeapp/static/css/main.f05016c4.chunk.css.map"
+    "main.css": "/recipeapp/static/css/main.f05016c4.chunk.css",
+    "main.js": "/recipeapp/static/js/main.4676d723.chunk.js",
+    "main.js.map": "/recipeapp/static/js/main.4676d723.chunk.js.map",
+    "runtime-main.js": "/recipeapp/static/js/runtime-main.fb7fb101.js",
+    "runtime-main.js.map": "/recipeapp/static/js/runtime-main.fb7fb101.js.map",
+    "static/js/2.3612b986.chunk.js": "/recipeapp/static/js/2.3612b986.chunk.js",
+    "static/js/2.3612b986.chunk.js.map": "/recipeapp/static/js/2.3612b986.chunk.js.map",
+    "index.html": "/recipeapp/index.html",
+    "precache-manifest.ebb3d390baa0cc6a8723ba4559fdc3c2.js": "/recipeapp/precache-manifest.ebb3d390baa0cc6a8723ba4559fdc3c2.js",
+    "service-worker.js": "/recipeapp/service-worker.js",
+    "static/css/main.f05016c4.chunk.css.map": "/recipeapp/static/css/main.f05016c4.chunk.css.map"
   }
 }
