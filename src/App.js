@@ -27,12 +27,12 @@ function App() {
 
   return (
     <div className="App">
-      <Router basename="recipeapp">
+      <Router basename="/">
         <Search />
         <Switch>
           <Route
             exact
-            path={process.env.PUBLIC_URL + `/search/:item`}
+            path="/search/:item"
             render={props => (
               <Recipe
                 {...props}
