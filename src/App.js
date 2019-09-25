@@ -3,7 +3,7 @@ import "./App.css";
 import Search from "./components/Search";
 import Recipe from "./components/Recipe";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 const APP_ID = "1820f3c6";
 const APP_KEY = "d9d784c526560876ea982b0ca4a68bd7";
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename="recipeapp">
         <Search />
         <Switch>
           <Route
