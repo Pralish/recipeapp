@@ -32,7 +32,7 @@ function App() {
         <Switch>
           <Route
             exact
-            path="/search/:item"
+            path={process.env.PUBLIC_URL + `/search/:item`}
             render={props => (
               <Recipe
                 {...props}
