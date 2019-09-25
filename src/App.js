@@ -1,24 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Search from "./components/Search";
+import Recipe from "./components/Recipe";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+const APP_ID = "1820f3c6";
+const APP_KEY = "d9d784c526560876ea982b0ca4a68bd7";
 
 function App() {
+  const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const getRecipes = item => {
+    setLoading(true);
+    fetch(
+      `https://api.edamam.com/search?q=${item}&app_id=${APP_ID}&app_key=${APP_KEY}`
+    )
+      .then(response => response.json())
+      .then(itemList => {
+        setRecipes(itemList.hits);
+        console.log(itemList.hits);
+        setLoading(false);
+      });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Search />
+        <Switch>
+          <Route
+            exact
+            path="/search/:item"
+            render={props => (
+              <Recipe
+                {...props}
+                getRecipes={getRecipes}
+                recipes={recipes}
+                loading={loading}
+              />
+            )}
+          />
+        </Switch>
+      </Router>
     </div>
   );
 }
