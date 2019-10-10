@@ -3,6 +3,7 @@
 }
 
 .btn {
+  display: block;
   border: none;
   text-decoration: none;
   padding: 5px 20px;
@@ -11,6 +12,18 @@
 .btn-white {
   border: #000000 1px solid;
   color: black;
+}
+
+.btn-danger {
+  border: #f32013 1px solid;
+  color: #f32013;
+  width: 80px;
+  text-align: center;
+}
+
+.btn-green {
+  border: #7cfc00 1px solid;
+  color: #7cfc00;
 }
 
 .gridContainer {
@@ -36,4 +49,29 @@
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+@media (max-width: 760px) {
+  .gridContainer {
+    display: block;
+  }
+}
+
+.landing-page {
+  margin-top: 200px;
+  transition: 0.5s;
+}
+
+.landing-page input {
+  width: 400px;
+  height: 20px;
+}
+
+.landing-page button {
+  height: 25px;
+  width: 80px;
+}
+
+.not-landing-page {
+  transition: 0.5s;
 }

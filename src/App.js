@@ -25,10 +25,17 @@ function App() {
       });
   };
 
+  const clearItems = () => {
+    setRecipes([]);
+  };
+
   return (
     <div className="App">
       <Router basename="/">
-        <Search />
+        <Search
+          showClear={recipes.length ? true : false}
+          clearItems={clearItems}
+        />
         <Switch>
           <Route
             exact
