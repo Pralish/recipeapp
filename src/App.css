@@ -72,6 +72,6 @@
   width: 80px;
 }
 
-/* .not-landing-page { */
-/* transition: 0.5s; */
-/* } */
+.not-landing-page {
+  transition: 0.5s;
+}
